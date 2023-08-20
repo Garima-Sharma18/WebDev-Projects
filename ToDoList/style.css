@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: box-border;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(119, 49, 185);
+    color: white;
+}
+
+main{
+    background-color: rgb(56, 8, 101);
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+    display: flex;
+    justify-content: center;
+}
+
+.app{
+    width: 100%;
+    max-width: 768px;
+}
+
+.app header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.app header h1{
+    color: white;
+    font-size: 28px;
+    font-weight: 400;
+}
+
+.app header button{
+    color: white;
+    font-size: 18px;
+    border-bottom: 2px solid pink;
+}
+
+.item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: purple;
+    box-shadow: 0 0 1.5rem rgb(71, 2, 71);
+    margin-bottom: 1.5rem;
+}
+
+.item:last-of-type{
+    margin: 0;
+}
+
+.item input[type="checkbox"]
+{
+    margin-right: 1rem;
+}
+
+.item input[type="text"]
+{
+    appearance: none;
+    background: none;
+    margin: none;
+    border: none;
+    outline: none;
+    font-weight: 400px;
+    color: white;
+    flex: 1 1 0%;
+    font-size: 18px;
+    margin-right: 1rem;
+}
+
+.item input[type="text"]:not(:disabled)
+{
+    border-bottom: 2px solid pink;
+}
+
+.item.complete input[type="text"]{
+    text-decoration: line-through;
+}
+
+.item:hover, .item:focus-within{
+    outline: 2px solid palevioletred;
+}
+
+.actions button{
+    color: palevioletred;
+    margin-right: 1rem;
+    opacity: 0.8;
+    transform: 0.1s;
+}
+
+.actions button.remove-btn{
+    color: crimson;
+}
+
+.actions:hover{
+    opacity: 1;
+}
+
+.actions button:last-of-type{
+    margin-right: 0;
+}
+
+.timer{
+    display: flex;
+    justify-content: center;
+}
+
+#timerButton {
+    background-color: palevioletred;
+    color: maroon;
+    border: none;
+    border-radius: 2rem;
+    margin-top: 1.5rem;
+    box-shadow: 0 0 0.5rem rgb(114, 3, 68) ;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
